@@ -33,8 +33,8 @@
                     <b-row>
                         <b-col>
                             <label for="">Año de fabricación</label>
-                            <b-form-datepicker v-model="form.date" :min="minDate" :max="maxDate" required
-                                placeholder="Seleccionar fecha"></b-form-datepicker>
+                            <b-form-input :state="validarYear" type="date" required placeholder="Año de fabricación"
+                                v-model="form.year"></b-form-input>
 
                             <b-form-invalid-feedback :state="validarYear">
                                 Año de fabricación no puede ser mayor al actual
